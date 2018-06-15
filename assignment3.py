@@ -1,46 +1,48 @@
-Python 2.7.14 (v2.7.14:84471935ed, Sep 16 2017, 20:19:30) [MSC v.1500 32 bit (Intel)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> #Q1 creating list
->>> a = ['hi',12345,['hello',6123],{},{'hi': 'oij'},('663','777')]
->>> print(a)
-['hi', 12345, ['hello', 6123], {}, {'hi': 'oij'}, ('663', '777')]
->>> #Q2 adding value to list
->>> b = ["google","apple","facebook","tesla","microsoft"]
->>> a.extend(b)
->>> print(a)
-['hi', 12345, ['hello', 6123], {}, {'hi': 'oij'}, ('663', '777'), 'google', 'apple', 'facebook', 'tesla', 'microsoft']
->>> #Q3 counting the number of it
->>> print(a.count('tesla'))
-1
->>> #Q4 ascending and descending
->>> c = [1,4,5,66,5,7,8,2,5,75,89,45]
->>> c.sort()
->>> print(c)
-[1, 2, 4, 5, 5, 5, 7, 8, 45, 66, 75, 89]
->>> c.sort(reverse = 1)
->>> print(c)
-[89, 75, 66, 45, 8, 7, 5, 5, 5, 4, 2, 1]
->>> stack = ["luffy","monkey","mugiwara"]
->>> stack.append("nami")
->>> print(stack)
-['luffy', 'monkey', 'mugiwara', 'nami']
->>> stack.append("brook")
->>> print(stack)
-['luffy', 'monkey', 'mugiwara', 'nami', 'brook']
->>> print(stack.pop())
-brook
->>> print(stack.pop())
-nami
->>> print(stack)
-['luffy', 'monkey', 'mugiwara']
->>> queue = ["car","scooty","tv","mobile"]
->>> print(queue)
-['car', 'scooty', 'tv', 'mobile']
->>> queue.append("table")
->>> print(queue)
-['car', 'scooty', 'tv', 'mobile', 'table']
->>> queue.append("chair")
->>> print(queue)
-['car', 'scooty', 'tv', 'mobile', 'table', 'chair']
->>> print(queue.popleft())
+#Q1 creating list
 
+a = ['hi',12345,['hello',6123],{},{'hi': 'oij'},('663','777')] #list with mutiple elements
+print(a) #output of list
+
+
+#Q2 adding value to list
+
+b = ["google","apple","facebook","tesla","microsoft"]#new value that will be added in previous list a
+a.extend(b) #extend method is used fro adding element of b into a
+print(a) #output
+
+
+#Q3 counting the number of time an object occurs in a list
+print(a.count('tesla'))#this will count the no. of times tesla occur in list a extended with list b
+
+
+#Q4 creating a list and sorting it in ascending and descending
+
+c = [1,4,5,66,5,7,8,2,5,75,89,45]#list with int data type
+c.sort() #sort method which is used to sort the lit in ascending order
+print(c) #output
+c.sort(reverse = 1) #reverse here is used to sort the list in descending order
+print(c) #output
+
+
+#Q6 implement a stack and queue using lists
+
+stack = ["luffy","monkey","mugiwara"] #stack using list
+stack.append("nami") #element that have to be added in stack
+print(stack) #output
+stack.append("brook") #new element that will be added in stack
+print(stack) #output
+print(stack.pop()) #remove the last element in stack
+print(stack.pop()) #remove the last elemnt in stack
+print(stack) #print stack
+ #implementing queue using lists
+queue = ["car","scooty","tv","mobile"] #queue using list
+ print(queue) #output
+queue.append("table") #element table is added to the queue
+print(queue) #output
+queue.append("chair") #element table is added to the queue
+print(queue) #output
+print(queue.popleft()) #remove the left most element of the queue
+print(queue.popleft()) #remove the left most element of the queue
+print(queue) #output after removing the 2 names from the left side of the queue
+
+Q
