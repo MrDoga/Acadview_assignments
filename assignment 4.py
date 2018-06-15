@@ -35,5 +35,25 @@ print ("product of new tuple is :" + str(tuple2))#it will give product of tuple2
 #2.compare 2 sets
 #3print sresult of intersection of 2 sets
 
-print("print elements for set1")
-set1 = ()
+A= {1,2,3,4} #set of elements
+B = {2,3,5}
+print (A,B) #output
+
+#now we have to calcualte difference between 2 sets (set1 and set2)
+print(B - A)#elements that exist only in set B but not in set A
+print(A - B)#elements that exist only in set A but not in set B
+
+#for intersection of 2 sets we will assume the above 2 sets A and B
+print (A & B)
+
+
+#Q Create a dictionary to store name and marks of 10 students by user input
+dictionary = {}
+count = 0 #initial count will be 0
+while count < 10: #start of loop, it will stop when it gets 10 input
+    name = raw_input("Enter yout name:")#raw_input gets input from the user and returns the data as a string
+    mark = input("enter your marks:")
+    if name not in dictionary:
+        dictionary[name] = mark #if name is not in dictionary it will be mark
+        count = count + 1#increment
+print dictionary #output
