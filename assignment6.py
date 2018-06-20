@@ -52,11 +52,9 @@ for x in range(4):
 #Q7
 
 dict = {'abc' : 16, 'tqe' : 19,'nbm' : 25} #dictionary with name and age
-b = input("Provide age :")
-for name,age in dict.values():
-    if b == age:
-        name = dict[age]
-        print name
+for key in dict.keys():
+  print(key,dict[key])
+
 
 
 
