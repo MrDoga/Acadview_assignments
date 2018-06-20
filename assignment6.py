@@ -1,4 +1,5 @@
 #Q1. Take 10 integers from user and print it on screen
+import end as end
 
 list = [] #empty list
 for i in range(10): #create list with 10 element
@@ -44,17 +45,13 @@ for n in even:
 
 #Q6
 
-n = int(input("enter nummber of  row "))#tell user to enter his desired no.
-row = 0 #intial row will be 0
-while row<n:
-    star = row+1 #printing star
-    while star>0:
-        print("*", end == "")
-        star=star-1
+for x in range(4):
+    print('*'*x)
+
 
 #Q7
 
-dict = {'abc' : 16, 'tqe' : 19,'nbm' : 25}
+dict = {'abc' : 16, 'tqe' : 19,'nbm' : 25} #dictionary with name and age
 b = input("Provide age :")
 for name,age in dict.values():
     if b == age:
