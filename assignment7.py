@@ -50,6 +50,9 @@ def factorial(n):
 n = int(input("Enter number:"))
 print("Factorial:")
 print factorial(n)
-list.append(factorial(n))
+dict={n:factorial(n)}
+print(dict)
+
+
 
 
