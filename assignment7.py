@@ -41,14 +41,15 @@ print power(2,3) #result will be 2*2*2
 
 #Q5
 
+list = []
 def factorial(n):
-        if(n <= 1):
-            return 1
-        else:return(n*factorial(n-1))
+    if(n <= 1):
+        return 1
+    else:
+        return(n*factorial(n-1))
 n = int(input("Enter number:"))
 print("Factorial:")
 print factorial(n)
-dict={n:factorial(n)}
-print(dict)
+list.append(factorial(n))
 
 
