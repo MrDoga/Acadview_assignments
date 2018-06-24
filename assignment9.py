@@ -1,11 +1,11 @@
 #Q1. Create a circle class and initialize it with radius. Make two methods getArea and getCircumference inside this class.
 
 class Circle():
-    def __init__(self,r):
+    def __init__(self,r): #initialize of radius class
         self.radius = r
-    def getArea(self):
-        return 3.14*self.radius*self.radius
-    def getCircumference(self):
+    def getArea(self): #initialize of get area
+        return 3.14*self.radius*self.radius # logic/formulae of area
+    def getCircumference(self):#initialize of circumference
         return self.radius*2*3.14
 
 #Q2. Create a student class and initialize it with name and roll number.Make method to display the information
@@ -13,9 +13,9 @@ class Student():
     def __init__(self,name,roll):
         self.name = name
         self.roll = roll
-    def display(self):
-        print self.name
-        print self.roll
+    def display(self): #used for displaying
+        print self.name #print name
+        print self.roll #print roll number
 
 #Q3. Create a Temprature class. Make two methods :
 # 1. convertFahrenheit - It will take celsius and will print it into Fahrenheit.
