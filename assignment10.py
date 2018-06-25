@@ -66,8 +66,12 @@ class Cop():
     def display(self):
         self.diplay
     def update(self):
-        self.update
-
+        name = input("enter name")
+        age = input("enter age")
+        work = input("type of work")
+        designation = input("designation")
+        experience = input("experience")
+        print("the",self.name,"is",self.age,"years old and works",self.work,"whos designation is ",self.designation,"and have experience for ",self.experience)
 
 
 
