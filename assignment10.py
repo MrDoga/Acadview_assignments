@@ -2,9 +2,10 @@
 # Create another class Tiger which is inheriting Animal and access the base class method.
 
 class Animal:
-    def animal_attribute(self,loyal,place): #object with animals attribute
+    def animal_attribute(self,loyal,legs): #object with animals attribute
         self.loyal = loyal
-        self.place = place
+        self.place = legs
+        print("animals are ",self.loyal,"to there masters")
 
 class Tiger(Animal):
     def tiger_attribute(self,name,gender,): #tigers attribute
@@ -43,7 +44,7 @@ class Shape:
         self.breadth = breadth
 
     def area(self):
-        return self.base*self.side*math.sin(math.radians(self.theta))
+        print ("the area is",self.length * self.breadth)
 class Rectangle(Shape):
     def __init__(self,base,side):
         super(Rectangle,self).__init__(base,side)
@@ -64,14 +65,14 @@ class Cop():
     def add(self):
         self.add
     def display(self):
-        self.diplay
-    def update(self):
-        name = input("enter name")
-        age = input("enter age")
-        work = input("type of work")
-        designation = input("designation")
-        experience = input("experience")
+
         print("the",self.name,"is",self.age,"years old and works",self.work,"whos designation is ",self.designation,"and have experience for ",self.experience)
+    def update(self):
+        self.name = "abc"
+        self.age = 21
+        self.designation = "manager"
+        self.experience = 4
+
 
 
 
