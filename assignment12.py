@@ -47,7 +47,7 @@ twitterStream.filter(track=("car"))
 #below program plays top 10 tracks of led zeppelin
 import spotipy
 
-lz_uri = 'spotify:artist:36QJpDe2go2KgaRleHCDTp' #token for tope 10 songs of led zepplin
+lz_uri = 'spotify:artist:36QJpDe2go2KgaRleHCDTp' #token for top 10 songs of led zepplin
 
 spotify = spotipy.Spotify()
 results = spotify.artist_top_tracks(lz_uri)
